@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontend/styles/main.css">
+    <title>Meu Portifólio</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/09984a3ce7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="principal">
+        <header class="cabecalho">
+            <div>
+                <div class="logo" >
+                    <a href="#">
+                        <h1>
+                            TM
+                        </h1>
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li class="menu-item" data-url="inicio">
+                            <a href="#inicio" class="active">Inicio</a>
+                        </li>
+                        <li class="menu-item" data-url="sobre">
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li class="menu-item" data-url="projects">
+                            <a href="#projects">Meus projectos</a>
+                        </li>
+                        <!-- <li class="menu-item" data-url="skills">
+                            <a href="#skills">Skills</a>
+                        </li> -->
+                        <li class="menu-item" data-url="contacto">
+                            <a href="#contacto">Contactar-me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="conteudo-principal container in-foco">
+            <article class="sectione" id="inicio">
+                <div></div>
+                <div class="left">
+                    <h1 class="welcome">
+                        Olá, bem vindo ao meu Portfólio<br/>
+                        <span class="name">Sou Tozé Mandela</span> <br/>
+                        <span class="funcao"> programador fullstack - júnior </span>
+                    </h1>
+                </div>
+            </article>
+        </section>
+        <article id="modal" style="display: block;">
+            <div class="remove">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container">
+                <div class="vd">
+                    <section class="video">
+                        <video src=""></video>
+                    </section>
+                    <aside class="descri">
+                    </aside>
+                </div>
+                <div class="controller">
+                    
+                    <a href="" class="linke">
+                        Linkedin
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" class="repo">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="" class="ver">
+                        Ver Projecto
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <section class="sectione" id="sobre">
+            <div class="my-self">
+                <a href="https://github.com/TozeMandela" target="_blank"><img src="./frontend/assets/img/mySelf01.png" alt="foto de perfil"></a>
+            </div>
+            <aside class="descrition ">
+                <h3>Sobre mim</h3>
+                <p>Programador fullstack com experiência em <br/><strong>HTML, CSS, JAVASCRIPT, NODE-JS, consumo e construção de APIs - REST, linguagens de Banco de dados como MongoDB, Mysql, MariaDB usando o Sequelize no node (isso nas duas ultimas citadas). Tenho ainda noções basicas de banco de dodos em tempo real(FIREBASE) e Conhecimentos básicos de React.js</strong>. <br/>Amo desafios e estou sempre disposto a aprender e evoluir afim de resolver cada tarefa.</p>
+            </aside>
+        </section>
+        <section  class="sectione" class="my-projects in-foco" id="projects">
+            <div class="container">
+                <aside class="front">
+                    <article class="p1">
+                        <figure>
+                            
+                            <figcaption>
+                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-solid fa-globe"></i>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="p2">
+                            <figure>
+                                <figcaption>
+                                    <i class="fa-brands fa-github"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <i class="fa-solid fa-globe"></i>
+                                </figcaption>
+                            </figure>
+                    </article>
+                    <article class="p3">
+                            <figure>
+                                <figcaption>
+                                    <i class="fa-brands fa-github"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <i class="fa-solid fa-globe"></i>
+                                </figcaption>
+                            </figure>
+                    </article>
+                </aside>
+                <aside class="back">
+                    <article class="p1">
+                        <div class="legenda-p1"></div>
+                    </article>
+                    <article class="p2">
+                        <div class="legenda-p1"></div>
+                    </article>
+                    <article class="p3">
+                        <div class="legenda-p1"></div>
+                    </article>
+                </aside>
+            </div>
+        </section>
+        <section id="contacto">
+
+        </section>
+    </main>
+    <script src="./frontend/js/active.js"></script>
+    <script src="./frontend/js/navBar.js"></script>
+</body>
+</html>
