@@ -1,8 +1,9 @@
 :root {
+  --body-bg-coler: #120567;
     --body-bg-color: #FFF1D0;
     --body-bg-color1: #0f055ebb;
     --body-bg-color2: #211149;
-    --text-color: #0f055ee8;
+    --text-color1: #0f055ee8;
     --text-color: #6d5882;
     --text-color-3:  #D56F3E;
   }
@@ -17,7 +18,7 @@
 
   body {
     font-family: sans-serif;
-    background:  url('../assets/img/fundo01.jpg') no-repeat center fixed;
+    background: var(--body-bg-coler) url('../assets/img/fundo01.jpg') no-repeat center fixed;
     background-size: 100%;
     background-position-y: -80px;
   }
@@ -74,7 +75,7 @@
   }
   .active{
     padding-bottom: 10px;
-    border-bottom: 4px solid var(--text-color-1);
+    border-bottom: 4px solid var(--text-color-3);
     cursor: pointer;
    }
   .left {
@@ -120,8 +121,43 @@
   border-radius: 15px;
  }
  .vd {
-  height: 90%;
+  height: 85%;
   display: flex;
+  margin-bottom: 15px;
+ }
+ .vd section, .vd aside {
+  width: 50%;
+  height: 100%;
+  padding: 5px;
+ }
+ .vd section {
+  border-right: 1px solid var(--text-color-3);
+ }
+ .vd aside {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: justify;
+ }
+ .vd aside li{
+  text-align: initial;
+ }
+ .vd aside ul{
+  display: inline-block;
+  list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
+ }
+ .vd section img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+ }
+ .vd iframe{
+  width: 100%;
+  padding: 10px;
  }
 .remove {
   text-align: right;
@@ -140,7 +176,7 @@
  }
 
  #sobre {
-  background: #a029fb url('../assets/img/fundo.png') no-repeat center;
+  background: var(--body-bg-coler) url('../assets/img/fundo.png') no-repeat center;
   background-size: 600px;
   background-position-y: 40px;
   padding-top: 70px;
@@ -163,7 +199,8 @@
   font-size: 2em;
  }
  .descrition p, .descrition p * {
-  color: white;
+  
+  color: var(--text-color);
   max-width: 500px;
  }
  #projects {
@@ -230,14 +267,148 @@
   width: 100%;
   height: 100%;
  }
+ /* back */
  .back article{
-  background-color: var(--text-color-3);
   width: 30%;
   height: 100%;
   display: inline-block;
-  margin: 2px; 
+  margin: 2px;
+  position: relative;
  }
+ .back article:hover{
+  width: 35%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: 1.5s;
+  z-index: 1;
+ }
+ .back article figure{
+  position: relative;
+  height: 100%;
+ }
+ .back article figcaption{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+ }
+ .back article figcaption:hover{
+  position: absolute;
+  background: var(--body-bg-color1);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+ }
+ .back article figcaption *{
+  padding: 3px;
+  color: var(--text-color);
+ }
+ .back article img{
+  width: 100%;
+  height: 100%;
+ }
+ 
  #contacto {
   height: 35vh;
   background-color: #13131F;
  }
+@media (max-width: 1300px) {
+
+}
+@media (max-width: 720px) { 
+  *{
+    color: #37e766;
+  } 
+} 
+ 
+ @media (max-width: 390px) {
+  body {
+    font-family: sans-serif;
+    background: var(--body-bg-coler) url('../assets/img/fundo01.jpg') no-repeat fixed;
+    background-size: 150%;
+    background-position-y: 10px;
+    background-position-x: -10px;
+  }
+  .conteudo-principal #inicio {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .conteudo-principal #inicio h1{
+    font-size: 1.9em;
+  }
+ .conteudo-principal{
+  display: block;
+  margin-bottom: 80px;
+ }
+ .funcao {
+  color: var(--text-color);
+  font-size: 0.7em;
+ }
+ .name {
+  color: white;
+ }
+ #modal {
+  position: absolute;
+  background-color: #9e89cf83;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;  
+ }
+ #modal div.container{
+  top: 15vh;
+  position: relative;
+  background-color: #190d36;
+  height: 60%;
+  width: 100%;
+  border-radius: 15px;
+ }
+ .vd {
+  height: 85%;
+  display: flex;
+  margin-bottom: 15px;
+ }
+ .vd section, .vd aside {
+  width: 50%;
+  height: 100%;
+  padding: 5px;
+ }
+ .vd section {
+  border-right: 1px solid var(--text-color-3);
+ }
+ .vd aside {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: justify;
+ }
+ .vd aside li{
+  text-align: initial;
+ }
+ .vd aside ul{
+  display: inline-block;
+  list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
+ }
+ .vd section img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+ }
+ .vd iframe{
+  width: 100%;
+  padding: 10px;
+ }
+}

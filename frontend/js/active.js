@@ -40,6 +40,7 @@
     }
 
     let modal = document.querySelector('#modal');
+    
     if (modal.style.display === 'block') {
         const a = document.createElement('a');
         a.href = '#modal';
@@ -49,7 +50,4 @@
         overflowHtmlBody('hidden');
     }
 
-     document.querySelector('.remove').addEventListener('click', () => {
-        document.querySelector('#modal').style.display = 'none';
-        overflowHtmlBody('auto');
-     });
+     
