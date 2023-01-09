@@ -626,7 +626,8 @@
     background-color: #9e89cf83;
     z-index: 2;
     width: 100vw;
-    height: 100%;  
+    height: 100%;
+    top: 0;  
    }
    #modal div.container{
     border: 1px solid yellow;
