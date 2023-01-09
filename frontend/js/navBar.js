@@ -96,7 +96,7 @@ function interv(){
         
     });
 
-}, 5000);
+}, 10000);
 }
 
 interv();
