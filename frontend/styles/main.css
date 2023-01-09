@@ -621,6 +621,19 @@
    }
 }
 @media (max-width: 500px) {
+  .cabecalho .menu ul li::before{
+    content: '';
+    height: 10px;
+    width: 200px;
+    background-color: var(--text-color-3);
+    position: absolute;
+   /*  left: 25%; */
+    bottom: -5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .controller {
     display: flex;
     justify-content: space-around;
