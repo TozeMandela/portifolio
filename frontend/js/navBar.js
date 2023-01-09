@@ -82,7 +82,7 @@ function escolheImgApresentar(arrayF){
 function creteImg(imagem) {
     let img = document.createElement('img');
     img.dataset.name = imagem;
-    img.src = `/frontend/assets/img/imgP/${imagem}.png`;   
+    img.src = `frontend/assets/img/imgP/${imagem}.png`;   
     return img;
 }
 let idInterval;
