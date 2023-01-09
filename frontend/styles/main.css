@@ -490,7 +490,7 @@
    }
    #modal div.container{
     border: 1px solid yellow;
-    top: 12vh;
+    top: 0;
     position: relative;
     background-color: #190d36;
     height: 60%;
