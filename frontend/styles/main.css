@@ -449,10 +449,10 @@
   }
   .menuHambur{
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
   }
   .heigth {
-    transition: 3s;
+    transition: 1s;
     height: 330px;
   }
   .menuHambur div {
@@ -470,10 +470,10 @@
     rotate: 160deg;
     position: absolute;
     top: 10px;
-    transform: 2s;
+    transform: 1s;
   }
   .menuHambur .childTwo {
-    transition: 2s;
+    transition: 1s;
     top: 10px;
     position: relative;
     rotate: -160deg;
@@ -519,6 +519,68 @@
     border-left: 1px solid var(--text-color-3);
    }
 } 
+@media (max-width: 912px) { 
+  .conteudo-principal #inicio {
+    transition: 1s;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } 
+  
+ #projects {
+  height: auto;
+  background: var(--body-bg-color1);
+  padding: 60px;
+ }
+ #projects div.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ #projects div aside {
+  min-height: 225px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+ }
+ .front article{
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  margin: 2px;
+  position: relative;
+ }
+ .front article:hover{
+  width: 100%;
+  height: 400px;
+  transform: scale(1.1);
+  transition: 1.5s;
+  z-index: 1;
+ }
+ /* back */
+ .back article{
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  margin: 2px;
+  position: relative;
+ }
+ .back article:hover{
+  width: 100%;
+  height: 400px;
+  transform: scale(1.1);
+  transition: 1.5s;
+  z-index: 1;
+ }
+ #contacto {
+  padding-top: 130px;
+  height: 30vh;
+  background-color: #13131F;
+ }
+}
 @media (max-width: 734px) { 
   
   #modal {
@@ -530,14 +592,13 @@
    }
    #modal div.container{
     border: 1px solid yellow;
-    top: -5vh;
+    top: -3vh;
     position: relative;
     background-color: #190d36;
     height: 97%;
     width: 83%;
     border-radius: 15px;
    }
-   
    .vd {
     height: 85%;
     display: flex;
@@ -558,11 +619,122 @@
     padding: 10px;
     text-align: justify;
    }
-   .controller {
+}
+@media (max-width: 500px) {
+  .controller {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
    }
+   .container {
+    max-width: 350px;
+    margin: auto;
+  }
+  .conteudo-principal #inicio {
+    transition: 1s;
+    min-height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  } 
+  .conteudo-principal #inicio h1{
+    font-size: 1em;
+  }
+ .conteudo-principal{
+  display: block;
+  margin-bottom: 80px;
+ }
+ #sobre {
+  background: var(--body-bg-coler) url('../assets/img/fundo.png') no-repeat center;
+  background-size: 500px;
+  background-position-y: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .my-self a img{
+  width: 170px;
+ }
+ .my-self {
+  text-align: center;
+ }
+ .descrition {
+  text-align: center;
+ }
+ .my-self img:hover {
+  transform: scale(1.1);
+  transition: 1.3s;
+ }
+ .descrition h3, h3 {
+  font-size: 2em;
+ }
+ .descrition p, .descrition p * {
+  color: var(--text-color);
+  max-width: 350px;
+ }
+ #projects {
+  height: auto;
+  background: var(--body-bg-color1);
+  padding: 60px;
+ }
+ #projects div.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ #projects div aside {
+  min-height: 225px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+ }
+ .front article{
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin: 2px;
+  position: relative;
+ }
+ .front article:hover{
+  width: 100%;
+  height: 200px;
+  transform: scale(1.1);
+  transition: 1.5s;
+  z-index: 1;
+ }
+ /* back */
+ .back article{
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin: 2px;
+  position: relative;
+ }
+ .back article:hover{
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: 1.5s;
+  z-index: 1;
+ }
+  #contacto {
+  padding-top: 100px;
+  height: 30vh;
+  background-color: #13131F;
+ }
+ .contactos a{
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+ }
+ .contactos a *{
+  font-size: 45px;
+ }
 }
 
 @media (max-height: 450px) {
